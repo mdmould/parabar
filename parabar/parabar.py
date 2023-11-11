@@ -1,5 +1,3 @@
-import os
-from functools import partial
 from tqdm.auto import tqdm
 from pathos.pools import ProcessPool
 

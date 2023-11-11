@@ -55,6 +55,7 @@ print(y)
 
 # Parallel
 y = parabar.map(f, iterable, a, b = b)
+print(y)
 ```
 
 ### Function of multiple iterables:
@@ -94,13 +95,17 @@ print(z)
 ### Specify number of processes and keyword arguments for progress bar
 
 ```
+from tqdm.auto import tqdm
+
 f = lambda x: x
 iterable = [1, 2, 3]
 tqdm_kwargs = dict(total = 3, desc = 'iterating')
 
 # Serial
 y = [f(x) for x in tqdm(iterable, **tqdm_kwargs)]
+print(y)
 
 # Parallel
 y = parabar.map(f, iterable, ncpus=2, tqdm_kwargs=tqdm_kwargs)
+print(y)
 ```
