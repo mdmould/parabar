@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-name = 'pythonpackage'
-version = '0.0.1'
+name = 'parabar'
+version = '0.1'
 
 with open('README.md' ,'r') as f:
     long_description = f.read().strip()
@@ -17,8 +17,6 @@ setup(
     author_email='mattdmould@gmail.com',
     license='MIT',
     packages=find_packages(),
-    install_requires=[],
+    install_requires=['tqdm', 'pathos'],
     python_requires='>=3.7',
     )
-    
-
