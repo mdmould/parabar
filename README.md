@@ -28,7 +28,7 @@ You can provide other fixed positional and keywords arguments to your function t
 
 ### Function of a single iterable:
 
-```
+```python
 f = lambda x: x**2
 iterable = [1, 2, 3]
 
@@ -43,7 +43,7 @@ print(y)
 
 ### Function of a single iterable, with non-iterable args and kwargs:
 
-```
+```python
 f = lambda x, a, b = 0: x**2 * a + b
 iterable = [1, 2, 3]
 a = 1
@@ -60,7 +60,7 @@ print(y)
 
 ### Function of multiple iterables:
 
-```
+```python
 f = lambda x, y: x * y
 iterable1 = [1, 2, 3]
 iterable2 = [4, 5, 6]
@@ -76,7 +76,7 @@ print(z)
 
 ### Function of multiple iterables, with non-iterable args and kwargs
 
-```
+```python
 f = lambda x, y, a, b = 0: x * y * a + b
 iterable1 = [1, 2, 3]
 iterable2 = [4, 5, 6]
@@ -94,7 +94,7 @@ print(z)
 
 ### Specify number of processes and keyword arguments for progress bar
 
-```
+```python
 from tqdm.auto import tqdm
 
 f = lambda x: x
